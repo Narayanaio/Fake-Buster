@@ -1,0 +1,18 @@
+{% extends 'root.html' %}
+
+{% block form %}
+<form action="/" method="POST">
+    <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping">Test-string</span>
+            </div>
+            <input name='content' type="text" class="form-control" placeholder="Text to Fake-Bust" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+          <br>
+    <button type="button" class="btn btn-primary">Fake-Bust</button>
+</form>
+{% endblock %}
+
+{% block prediction %}
+   <p>{{sent}}</p>
+{% endblock %}
